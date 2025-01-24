@@ -1,0 +1,42 @@
+@media(max-width: 740px) {
+    .user-action {
+        display: none;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        background-color: red;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        transition: .3s;
+    }
+
+    .header-nav.active {
+        width: 300px;
+    }
+    
+    .header-nav_link {
+        color: #fff;
+    }
+    
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu.active span {
+        background-color: transparent;
+    }
+    .burger-menu.active span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .burger-menu.active span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+}
