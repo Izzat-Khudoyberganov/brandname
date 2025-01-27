@@ -13,6 +13,9 @@
     <title>BrandName</title>
   </head>
   <body>
+    <div id="loader">
+      <div class="spin"></div>
+    </div>
     <!-- Accessible -  -->
     <header class="page-header">
       <div class="container">
@@ -34,6 +37,22 @@
           <button type="menu" class="burger-menu">
             <span></span>
           </button>
+
+          <dialog class="login-modal">
+            <button autofocus class="close-modal-btn">
+              <img src="./image/close-icon.png" width="30px" height="30px" alt="">
+            </button>
+            <h2 class="login-form_title">Enter your login and password</h2>
+            <form class="login-form" action="">
+              <label for="username">Username</label>
+              <input type="text" placeholder="Enter your name" name="username" required min="3">
+              <br>
+              <label for="login">Login</label>
+              <input type="text" placeholder="Enter your login" name="login" required min="4">
+              <button type="submit" class="login-form_button">Submit</button>
+            </form>
+          </dialog>
+          
         </div>
       </div>
     </header>
