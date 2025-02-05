@@ -10,13 +10,13 @@ burgerMenu.addEventListener("click", () => {
 AOS.init();
 
 // loader
-setTimeout(() => {
-  console.log("Time is out");
-  document.querySelector("#loader").style.display = "none";
-  document.querySelector("header").style.display = "block";
-  document.querySelector("main").style.display = "block";
-  document.querySelector("footer").style.display = "block";
-}, 3000);
+// setTimeout(() => {
+//   console.log("Time is out");
+//   document.querySelector("#loader").style.display = "none";
+//   document.querySelector("header").style.display = "block";
+//   document.querySelector("main").style.display = "block";
+//   document.querySelector("footer").style.display = "block";
+// }, 3000);
 
 // DIALOG
 const modal = document.querySelector(".login-modal");
