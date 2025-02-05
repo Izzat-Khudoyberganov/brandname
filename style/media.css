@@ -1,3 +1,18 @@
+@media(max-width:840px) {
+    .swiper-slide {
+        padding: 20px 30px;
+    }
+
+    .icon-wrapper {
+        padding: 15px;
+    }
+
+    .slide-title::after {
+        width: 0;
+        height: 0;
+    }
+}
+
 @media(max-width: 740px) {
     .user-action {
         display: none;
@@ -20,11 +35,11 @@
         width: 300px;
         left: 0;
     }
-    
+
     .header-nav_link {
         color: #fff;
     }
-    
+
     .burger-menu {
         display: flex;
     }
@@ -32,10 +47,12 @@
     .burger-menu.active span {
         background-color: transparent;
     }
+
     .burger-menu.active span::before {
         transform: rotate(45deg);
         top: 0;
     }
+
     .burger-menu.active span::after {
         transform: rotate(-45deg);
         top: 0;
@@ -43,6 +60,7 @@
 
     .banner {
         padding-top: 0;
+        padding-bottom: 60px;
     }
 
     .banner-info {
@@ -58,12 +76,40 @@
     .banner-info_title {
         font-size: 50px;
     }
+
+    .swiper-slide {
+        row-gap: 15px;
+    }
+
+
+}
+
+@media(max-width:600px) {
+    .swiper {
+        height: max-content;
+    }
+
+    .slide-title {
+        margin-bottom: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+
+    .slide-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
 }
 
 @media(max-width:500px) {
     .page-header {
         padding-block: 20px;
     }
+
     .banner-info {
         row-gap: 20px;
     }
@@ -104,10 +150,18 @@
         padding-inline: 20px;
         font-size: 12px;
     }
+
+    .swiper-slide {
+        padding: 15px 20px;
+    }
+
+    .icon-wrapper {
+        padding: 10px;
+    }
 }
 
 @media(max-width:360px) {
-    .banner-info_title{
+    .banner-info_title {
         font-size: 30px;
     }
 }
