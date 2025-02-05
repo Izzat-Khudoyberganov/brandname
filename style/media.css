@@ -1,3 +1,14 @@
+@media(max-width:950px) {
+    .packages {
+        padding-block: 100px;
+    }
+
+    .packages .content {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+}
+
 @media(max-width:840px) {
     .swiper-slide {
         padding: 20px 30px;
@@ -103,6 +114,24 @@
         -webkit-box-orient: vertical;  
         overflow: hidden;
     }
+
+    .packages {
+        padding-block: 75px;
+    }
+
+    .packages-info {
+        row-gap: 25px;
+    }
+
+    .packages-info_title {
+        font-size: 35px;
+        line-height: 120%;
+    }
+
+    .packages-info_title::before {
+        width: 0;
+        height: 0;
+    }
 }
 
 @media(max-width:500px) {
@@ -157,6 +186,14 @@
 
     .icon-wrapper {
         padding: 10px;
+    }
+
+    .packages {
+        padding: 50px 0;
+    }
+
+    .packages-info_title {
+        font-size: 30px;
     }
 }
 
