@@ -21,6 +21,7 @@
     .slide-title::after {
         width: 0;
         height: 0;
+         
     }
 }
 
@@ -40,6 +41,7 @@
         justify-content: center;
         gap: 30px;
         transition: .3s;
+        z-index: 1000;
     }
 
     .header-nav.active {
