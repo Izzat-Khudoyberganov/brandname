@@ -41,8 +41,8 @@ closeModal.addEventListener("click", () => {
 });
 
 
-const chat_id = "1415615526";
-const token = "7578906477:AAHGaYCcKVsqQLwoKk1-vog5PpzNSR7tOWE";
+const chat_id = "chat_id";
+const token = "bot_token";
 const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
 
